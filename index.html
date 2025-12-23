@@ -440,15 +440,15 @@ available at <a href="https://github.com/giorgospets/reglue">https://github.com/
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered"> Faster convergence 🔥</h2>
     <div class="content has-text-justified">
-  <p>REGLUE (SiT-XL/2) matches 1M-step SOTA performance in just 700k iterations (~30% fewer steps) and improves FID across training budgets.</p>
+  <p>REGLUE with SiT-XL/2 matches 1M-step SOTA performance in just 700k iterations (~30% fewer steps) and improves FID across training budgets. Using the SiT-B/2 diffusion model, REGLUE consistently improves FID in both conditional and unconditional generation, achieving 12.9 and 28.7 at 400K iterations, respectively, outperforming REPA, ReDi, and REG. </p>
 </div>
 
        <div class="has-text-centered">
-        <img src="static/images/results.png"
+        <img src="static/images/results_all_nocap.png"
              alt="Faster Convergence"
-             style="max-width: 50%; height: auto;">
+             style="max-width: 80%; height: auto;">
          <h2 class="subtitle has-text-left" style="font-size: 1rem; max-width: 100%; margin: auto;">
-           <strong><span class="texttt">Conditional generation.</span> </strong> Comparison of SiT-XL/2 with REPA, ReDi, REG, and ours on ImageNet 256x256 without classifier-free guidance (CFG) under comparable settings. We report parameter count, iterations, and FID.
+           <strong><span class="texttt">Comparable Results</span> </strong> ImageNet 256x256 generation without classifier-free guidance (CFG). Left: SiT-B/2 performance in both conditional and unconditional generation. Right: SiT-XL/2 performance in conditional generation. Across scales and settings, REGLUE consistently achieves faster convergence and lower FID. We report parameter count, iterations, and FID.
          </h2>
       </div>
 
