@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
   <meta name="title" content="REGLUE Your Latents with Global and Local Semantics For Entangled Diffusion">
@@ -15,56 +15,58 @@
   <meta name="author" content="Giorgos Petsangourakis, Christos Sgouropoulos, Bill Psomas, Theodoros Giannakopoulos, Giorgos Sfikas, Ioannis Kakogeorgiou">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
   <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
+  <meta property="og:title" content="REGLUE Your Latents with Global and Local Semantics For Entangled Diffusion">
   <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta property="og:description" content="Representation Entanglement with Global–Local Unified Encoding. The encoder of a vision foundation model (VFM) provides (i) local patch-level
+  features and (ii) a global image-level feature (ie [CLS]). A lightweight semantic compressor (pre-trained offline) maps the patch features to compact spatial semantics.
+  In parallel, a frozen VAE encoder produces image latents. We concatenate the latents, compressed semantics, and the global token and feed them to a SiT backbone, which jointly models all modalities
+  with a velocity objective. Diffusion noise injection is omitted from the illustration.
+  At a selected block, an MLP head applies an external alignment to match hidden SiT features to clean VFM targets. At sampling, we decode the (jointly) generated VAE latents.">
   <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+  <meta property="og:url" content="https://reglueyourlatents.github.io/">
   <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="og:image:alt" content="REGLUE Your Latents with Global and Local Semantics For Entangled Diffusion">
+  <meta property="article:published_time" content="2025-12-23T00:00:00.000Z">
+  <meta property="article:author" content="Giorgos Petsangourakis">
   <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="article:tag" content="REGLUE">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
+  <meta name="twitter:site" content="@GPetsang">
   <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
+  <meta name="twitter:creator" content="@GPetsang">
   <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
+  <meta name="twitter:title" content="REGLUE Your Latents with Global and Local Semantics For Entangled Diffusion">
   <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta name="twitter:description" content="Representation Entanglement with Global–Local Unified Encoding. The encoder of a vision foundation model (VFM) provides (i) local patch-level
+  features and (ii) a global image-level feature (ie [CLS]). A lightweight semantic compressor (pre-trained offline) maps the patch features to compact spatial semantics.
+  In parallel, a frozen VAE encoder produces image latents. We concatenate the latents, compressed semantics, and the global token and feed them to a SiT backbone, which jointly models all modalities
+  with a velocity objective. Diffusion noise injection is omitted from the illustration.
+  At a selected block, an MLP head applies an external alignment to match hidden SiT features to clean VFM targets. At sampling, we decode the (jointly) generated VAE latents.">
   <!-- TODO: Same as social preview image above -->
   <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:image:alt" content="REGLUE">
 
   <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
+  <meta name="citation_title" content="REGLUE Your Latents with Global and Local Semantics For Entangled Diffusion">
+  <meta name="citation_author" content="Petsangourakis, Giorgos">
+  <meta name="citation_author" content="Sgouropoulos, Christos">
+  <meta name="citation_publication_date" content="2025">
   <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2512.16636">
+
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
   <meta name="msapplication-TileColor" content="#2563eb">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
+
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,22 +76,22 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
+  <title>REGLUE</title>
+
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
+
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
+
   <!-- Non-critical CSS - Load asynchronously -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
+
   <!-- Fallback for browsers that don't support preload -->
   <noscript>
     <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
@@ -97,10 +99,10 @@
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
-  
+
   <!-- Fonts - Optimized loading -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+
   <!-- Defer non-critical JavaScript -->
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
@@ -108,13 +110,13 @@
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
-  
+
   <!-- Structured Data for Academic Papers -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
+    "headline": "REGLUE",
     "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
     "author": [
       {
@@ -156,13 +158,13 @@
         "name": "RESEARCH_AREA_1"
       },
       {
-        "@type": "Thing", 
+        "@type": "Thing",
         "name": "RESEARCH_AREA_2"
       }
     ]
   }
   </script>
-  
+
   <!-- Website/Organization Structured Data -->
   <script type="application/ld+json">
   {
@@ -272,7 +274,13 @@
       <img src="static/images/teaser.png"
            alt="Overview of the REGLUE method"
            style="max-width: 100%; height: auto;">
-
+        <h2 class="subtitle has-text-left" style="font-size: 1rem; max-width: 100%; margin: auto;">
+            <strong>Overview of <span class="texttt">REGLUE</span> </strong>. Representation Entanglement with Global–Local Unified Encoding. The encoder of a vision foundation model (VFM) provides (i) local patch-level
+          features and (ii) a global image-level feature (ie [CLS]). A lightweight semantic compressor (pre-trained offline) maps the patch features to compact spatial semantics.
+          In parallel, a frozen VAE encoder produces image latents. We concatenate the latents, compressed semantics, and the global token and feed them to a SiT backbone, which jointly models all modalities
+          with a velocity objective. Diffusion noise injection is omitted from the illustration.
+          At a selected block, an MLP head applies an external alignment to match hidden SiT features to clean VFM targets. At sampling, we decode the (jointly) generated VAE latents.
+        </h2>
     </div>
   </div>
 </section>
@@ -330,7 +338,7 @@ available at <a href="https://github.com/giorgospets/reglue">https://github.com/
     <h2 class="title is-3 has-text-centered">More Semantics are needed! ➕</h2>
     <div class="content has-text-justified">
       <p>
-        Existing joint modeling and external alignment approaches (e.g., REPA, REG) inject only a “narrow slice” of Vision Foundation Model (VFM) features into diffusion. We argue that richer semantics are required to unlock the full potential of latent diffusion models. 
+        Existing joint modeling and external alignment approaches (e.g., REPA, REG) inject only a “narrow slice” of Vision Foundation Model (VFM) features into diffusion. We argue that richer semantics are required to unlock the full potential of latent diffusion models.
       </p>
     </div>
   </div>
@@ -357,7 +365,7 @@ available at <a href="https://github.com/giorgospets/reglue">https://github.com/
       </p>
 
        <div class="has-text-centered">
-        <img src="static/images/main_table.png" 
+        <img src="static/images/main_table.png"
              alt="Main Insight Table"
              style="max-width: 80%; height: auto;">
       </div>
@@ -379,7 +387,7 @@ available at <a href="https://github.com/giorgospets/reglue">https://github.com/
 </div>
 
        <div class="has-text-centered">
-        <img src="static/images/teaser_5.png" 
+        <img src="static/images/teaser.png"
              alt="Teaser without caption"
              style="max-width: 80%; height: auto;">
       </div>
@@ -397,9 +405,15 @@ available at <a href="https://github.com/giorgospets/reglue">https://github.com/
 </div>
 
        <div class="has-text-centered">
-        <img src="static/images/compressor.png" 
+        <img src="static/images/compressor.png"
              alt="Compressor"
              style="max-width: 80%; height: auto;">
+           <h2 class="subtitle has-text-left" style="font-size: 1rem; max-width: 100%; margin: auto;">
+             The representations from the last four layers of the vision foundation model (VFM) encoder are concatenated and passed to the compression model, which projects them into a compact 16-channel semantic representation.
+              In our default configuration, the compressor maps the dense concatenated VFM features through an input layer Conv2D(3072, 256), a middle ResidualBlock(256, 256), and an output layer Conv2D(256, 16),
+             where 256 is the hidden dimensionality. The semantic de-compressor then reconstructs the compact
+             semantics back to their original dimensionality. The model is trained using an MSE loss between the dense concatenated features and their reconstructed counterparts.
+           </h2>
       </div>
 
     </div>
@@ -430,14 +444,41 @@ available at <a href="https://github.com/giorgospets/reglue">https://github.com/
 </div>
 
        <div class="has-text-centered">
-        <img src="static/images/results.png" 
+        <img src="static/images/results.png"
              alt="Faster Convergence"
-             style="max-width: 120%; height: auto;">
+             style="max-width: 50%; height: auto;">
+         <h2 class="subtitle has-text-left" style="font-size: 1rem; max-width: 100%; margin: auto;">
+           <strong><span class="texttt">Conditional generation.</span> </strong> Comparison of SiT-XL/2 with REPA, ReDi, REG, and ours on ImageNet 256x256 without classifier-free guidance (CFG) under comparable settings. We report parameter count, iterations, and FID.
+         </h2>
       </div>
 
     </div>
   </div>
 </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered"> Semantic Preservation under compression</h2>
+        <div class="content has-text-justified">
+          <p>We evaluate how well compressed patch-level features retain
+            VFM semantics via attentive probing accuracy on ImageNet and semantic segmentation mIoU on
+            Cityscapes vs generative quality (FID).</p>
+        </div>
+
+        <div class="has-text-centered">
+          <img src="static/images/segmentation.png"
+               alt="Faster Convergence"
+               style="max-width: 100%; height: auto;">
+          <h2 class="subtitle has-text-left" style="font-size: 1rem; max-width: 100%; margin: auto;">
+            Points compare downstream semantic performance of frozen, compressed DINOv2 features (x-axis) with generation quality (ImageNet FID) of the corresponding SiT-B trained on both VAE latents and the compressed features (y-axis).
+            Left: ImageNet attentive-probing top-1 accuracy vs. FID. Right: Cityscapes mIoU (DPT head on frozen features) vs. ImageNet FID.
+
+          </h2>
+        </div>
+
+      </div>
+      </div>
+    </section>
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -492,7 +533,7 @@ available at <a href="https://github.com/giorgospets/reglue">https://github.com/
 </footer>
 
 <!-- Statcounter tracking code -->
-  
+
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
     <!-- End of Statcounter Code -->
